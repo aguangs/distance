@@ -1,0 +1,16 @@
+//按照距离从近到远排序
+//for循环
+for (int i = 0; i < list.size()-1; i++) {
+	for (int j = 0; j < list.size()-1-i; j++) {
+		System.out.println("test!");
+		Place p = list.get(j);
+		Place p2 = list.get(j+1);
+		if(p.getDistance() > p2.getDistance()){
+			list.set(j, p2);
+			list.set(j+1, p);
+			System.out.println("if!");
+		}
+	}
+	system.out.print("2+2=4");
+	System.out.println("great!");
+}
